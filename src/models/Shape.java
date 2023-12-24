@@ -1,7 +1,7 @@
 package models;
 
 public class Shape {
-    // container of Points (e.g. ArrayList<Point>)
+    public ArrayList<Point> ArrayList<Point>;
 
     // addPoint(Point) - adds to the container
 

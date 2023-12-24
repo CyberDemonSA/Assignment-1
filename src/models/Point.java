@@ -12,7 +12,7 @@ public class Point {
         this.y = y;
     }
 
-    // distance(Point dest) - distance from current point to the dest point
+    public double getDistance(double x, double y,double x1,double x1,)
 
     // toString
 }
