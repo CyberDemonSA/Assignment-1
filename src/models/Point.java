@@ -24,8 +24,14 @@ public class Point {
     public double getY(double y){
         return y;
     }
+
+    public double distance(Point end) {
+        double vectx = this.x - end.x;
+        double vecty = this.y - end.y;
+        return Math.sqrt(vectx * vectx + vecty * vecty);
+    }
     @Override
     public String toString() {
-        return "x=" + x + "y=" + y;
+        return "x=" + x+ " " + "y=" + y;
     }
 }

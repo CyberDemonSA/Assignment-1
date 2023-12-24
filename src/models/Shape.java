@@ -3,25 +3,23 @@ package models;
 import java.util.ArrayList;
 
 public class Shape {
-    private ArrayList<Point> ArrayListPoint;
+    private ArrayList<Point> points;
     public ArrayList<Double> side;
 
     public void addPoint(Point point){
-        ArrayListPoint.add(point);
+        points.add(point);
     }
 
-    public void distanceTo(ArrayList<Point> ArrayListPoint){
-        int i = 0;
-        while (ArrayListPoint.size()-1 > i){
-            double a=ArrayListPoint[i].x-ArrayListPoint[i+1].x;
-            double b=ArrayListPoint[i].y-ArrayListPoint[i+1].y;
-            side.add(Math.sqrt());
+    public double calculatePerimeter(){
+        double P = 0;
+        int size = points.size();
+        for (int i = 0; i < size; i++){
+            Point start = points.get(i);
+            Point end = points.get((i+1)%size);
+            P += start.distance(end);
         }
+        return P;
     }
 
-    // calculatePerimeter()
 
-    // getAverageSide()
-
-    // getLongestSide()
 }
