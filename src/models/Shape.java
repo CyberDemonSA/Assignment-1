@@ -21,5 +21,10 @@ public class Shape {
         return P;
     }
 
+    public double getAverageSide(){
+        int size = points.size();
+        return calculatePerimeter() / size;
+    }
+
 
 }
