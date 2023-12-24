@@ -26,5 +26,16 @@ public class Shape {
         return calculatePerimeter() / size;
     }
 
-
+    public double getLongestSide(){
+        double lons = 0, side;
+        int size = points.size();
+        for (int i = 0; i < size; i++){
+            Point start = points.get(i);
+            Point end = points.get((i+1)%size);
+            side = start.distance(end);
+            if (lons < side) {
+                lons = side;
+            }}
+        return lons;
+    }
 }
