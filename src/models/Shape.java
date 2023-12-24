@@ -3,8 +3,7 @@ package models;
 import java.util.ArrayList;
 
 public class Shape {
-    private ArrayList<Point> points;
-    public ArrayList<Double> side;
+    private ArrayList<Point> points = new ArrayList<>();
 
     public void addPoint(Point point){
         points.add(point);
