@@ -4,6 +4,11 @@ public class Point {
     private double x;
     private double y;
 
+    public Point(double x, double y) {
+        setX(x);
+        setY(y);
+    }
+
     public void setX(double x){
         this.x = x;
     }
@@ -12,7 +17,14 @@ public class Point {
         this.y = y;
     }
 
-    public double getDistance(double x, double y,double x1,double x1,)
+    public double getX(double x){
+        return x;
+    }
 
-    // toString
+    public double getY(double y){
+        return y;
+    }
+
+    public String toString() {
+        return ;
 }
