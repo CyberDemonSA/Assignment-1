@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class MyApplication {
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("C:\\Users\\User\\OneDrive\\Desktop\\Assignment 1\\src\\source");
+        File file = new File("C:\\Users\\User\\OneDrive\\Рабочий стол\\Assignment 1\\src\\source.txt");
 
         Scanner sc = new Scanner(file);
         Shape shape = new Shape();
